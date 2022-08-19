@@ -1,0 +1,32 @@
+$gray: #9b9a97;
+
+.search {
+	margin-left: 8rem;
+	display: flex;
+	align-items: center;
+	border-radius: 30px;
+	background-color: #000;
+	border: 1px solid rgba($gray, 0.4);
+	padding: 0.5rem 1rem;
+
+	> div {
+		display: flex;
+		align-items: center;
+	}
+
+	input {
+		background-color: transparent;
+		outline: none;
+		color: #fff;
+		margin-left: 0.5rem;
+		border: none;
+		&::placeholder {
+			color: $gray;
+		}
+	}
+
+	i {
+		color: $gray;
+		font-size: 20px;
+	}
+}

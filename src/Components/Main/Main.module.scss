@@ -1,0 +1,50 @@
+@import '../../../variables';
+
+.wrapper {
+	position: relative;
+	display: flex;
+	min-height: 514px;
+
+	.main {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+
+		&::before {
+			content: '';
+			background-image: linear-gradient(to right, #0f1011, transparent);
+			width: 150%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.info {
+		position: relative;
+		z-index: 1;
+		width: 50%;
+		padding: 5rem 0 5rem 1rem;
+
+		.additional {
+			display: flex;
+			align-items: center;
+			color: $gray;
+			margin: 1rem 0 2rem;
+
+			> span {
+				margin-right: 1rem;
+				font-size: 18px;
+			}
+		}
+
+		.description {
+			font-size: 18px;
+			color: $gray;
+			margin-bottom: 3rem;
+			line-height: 1.65;
+		}
+	}
+}
