@@ -12,7 +12,11 @@ const Main = () => {
 
 	return (
 		<div className={styles.wrapper}>
-		
+			<Sidebar />
+			<div style={{}}>
+				<Information movie={DATA[0]} />
+				<BottomNavigation/>
+			</div>
 		</div>
 	)
 }
