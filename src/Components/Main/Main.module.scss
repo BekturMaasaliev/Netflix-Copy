@@ -2,8 +2,9 @@
 
 .wrapper {
 	position: relative;
-	height: calc(100vh - 78px);
-
+	display: flex;
+	min-height: 514px;
+	height: 87.5vh;
 	.main{
 		background-position: center;
 		background-size: cover;
@@ -11,7 +12,7 @@
 		position: relative;
 		&::before{
 			content: '';
-			background-image: linear-gradient(to right, #000, transparent);
+			background-image: linear-gradient(to right, #0f1011, transparent);
 			width: 100%;
 			height: 100%;
 			position: absolute;
@@ -23,7 +24,7 @@
 		position: relative;
 		z-index: 1;
 		width: 50%;
-
+		padding: 5rem 0 5rem 0;
 		.additional{
 			display: flex;
 			align-items: center;
@@ -37,9 +38,10 @@
 		}
 
 		.description{
-			font-size: 20px;
+			font-size: 18px;
 			color: $gray;
 			margin-bottom: 3rem;
+			line-height: 1.65;
 		}
 	}
 }

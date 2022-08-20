@@ -1,2 +1,11 @@
 $gray : #9b9a97;
 $red: #c62e21;
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

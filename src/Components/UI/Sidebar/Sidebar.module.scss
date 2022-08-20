@@ -1,8 +1,24 @@
 @import "../../../variables";
 
 .sidebar {
+    >button{
+        background-color: transparent;
+        border: none;
+        color: $gray;
+        font-size: 30px;
+    }
+    .sidebarIcon{
+        margin: 0rem;
+    }
     ul{
         list-style-type: none;
+        padding: 0;
+        display: none;
+        animation: opacity .4s;
+        text-align: left;
+        &.show{
+            display: block;
+        }
         li{
             margin-bottom: 0.5rem;
             a{
@@ -10,7 +26,7 @@
                 display: block;
                 color: $gray;
                 text-decoration: none;
-                border-right: 2px solid transparent;
+                border-left: 2px solid transparent;
                 font-size: 20px;
                 &:hover, &.active{
                     border-color: $red;
