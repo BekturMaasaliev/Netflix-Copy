@@ -1,0 +1,22 @@
+@import "../../../variables";
+
+.sidebar {
+    ul{
+        list-style-type: none;
+        li{
+            margin-bottom: 0.5rem;
+            a{
+                padding: 0.5rem;
+                display: block;
+                color: $gray;
+                text-decoration: none;
+                border-right: 2px solid transparent;
+                font-size: 20px;
+                &:hover, &.active{
+                    border-color: $red;
+                    background-color: #2a2a2c;
+                }
+            }
+        }
+    }
+}
